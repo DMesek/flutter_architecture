@@ -1,0 +1,19 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: true
+    implicit-dynamic: true
+    
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    avoid_classes_with_only_static_members: false
+    avoid_positional_boolean_parameters: false
+    sort_constructors_first: false
+    prefer_single_quotes: true
+    prefer_if_elements_to_conditional_expressions: false
+    curly_braces_in_flow_control_structures: false
